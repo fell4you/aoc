@@ -145,7 +145,6 @@ def value(s, hands_dict, rank, value, vl):
     for i in s:
         rank += 1
         value += hands_dict[str(i)] * rank
-        print(f"Rank: {rank} - {i}, {vl} - value: {rank} * {hands_dict[str(i)]}")
     return rank, value
 
 if __name__ == "__main__":
